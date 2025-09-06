@@ -1,0 +1,277 @@
+<html>
+    <head>
+        <title>Keeper of the Lost Cities Characters</title>
+        <style>
+            body{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color:black;
+                color:white;
+                padding:20px;
+                text-align:center;
+            }
+            header{
+                text-align:center;
+                color:rgb(255, 96, 181);
+                font-size:30px;
+            }
+            .gallery{
+                display:flex;
+                gap:20px;
+                justify-content:center;
+                flex-wrap:wrap;
+            }
+            h1{
+                text-align:center;
+                color:rgb(244, 124, 255);
+                font-size:20px;
+            }
+            .card{
+                width:180px;
+                background-color:rgb(63, 63, 63);
+                border-radius:10px;
+                overflow:hidden;
+                cursor:pointer;
+                text-decoration:none;
+                color:white;
+                transition:transform 0.3s;
+            }
+            .card:hover{
+                transform:scale (1.05)
+            }
+            .card img{
+                width:100%;
+                height:220px;
+                object-fit:cover;
+            }
+            .card h3{
+                padding:10px;
+                font-size:16px;
+            }
+            /* modal css */
+            .modal{
+                display:none;
+                position:fixed;
+                top:0;
+                left:0;
+                height:100%;
+                width:100%;
+                background-color:rgba(0,0,0,0.7);
+                justify-content:center;
+                align-items:center;
+                z-index:100;
+            }
+            .modal:target{
+                display:flex;
+            }
+            .modalbox{
+                background:blanchedalmond;
+                padding:20px;
+                border-radius:20px;
+                height:350px;
+                width:350px;
+                overflow:auto;
+                text-align:center;
+                position:relative;
+                transform:scale(1);
+                transition:transform 0.4s ease;
+                color:rgb(0, 0, 0);
+            }
+            .modal h2{
+                color:black;
+            }
+            .modal p{
+                color:black;
+            }
+            .modal img{
+                width:150px;
+                border-radius:50%;
+                margin-bottom:15px;
+            }
+            .closebutton{
+                position:absolute;
+                top:10px;
+                right:15px;
+                text-decoration:none;
+                font-size:30px;
+                color:black;
+            }
+            .closebutton:hover{
+                color:red;
+            }
+        </style>
+    </head>
+<body>
+        <header>Keeper of the Lost Cities Characters</header>
+        <h1>Characters</h1>
+        <div class="gallery">
+        <a href="#sophie"class="card">
+            <img src="https://shannonmessenger.com/wp-content/uploads/2018/09/Final-Sophie-Portrait.jpg">
+            <h3>Sophie Foster</h3>
+        </a>
+        <a href="#biana"class="card">
+            <img src="https://shannonmessenger.com/wp-content/uploads/2018/09/Final-Biana-Portrait.jpg">
+            <h3>Biana Vacker</h3>
+        </a>
+        <a href="#fitz"class="card">
+            <img src="https://shannonmessenger.com/wp-content/uploads/2018/09/Final-Fitz-Portrait.jpg">
+            <h3>Fitz Vacker</h3>
+        </a>
+        <a href="#keefe"class="card">
+            <img src="https://shannonmessenger.com/wp-content/uploads/2018/09/Final-Keefe-Portrait.jpg">
+            <h3>Keefe Sencen</h3>
+        </a>
+        <a href="#dex"class="card">
+            <img src="https://shannonmessenger.com/wp-content/uploads/2018/09/Final-Dex-Portrait.jpg">
+            <h3>Dex Dizznee</h3>
+        </a>
+        <a href="#tam"class="card">
+            <img src="https://shannonmessenger.com/wp-content/uploads/2018/09/Final-Tam-Portrait.jpg">
+            <h3>Tam Song</h3>
+        </a>
+        <a href="#linh"class="card">
+            <img src="https://shannonmessenger.com/wp-content/uploads/2018/09/Final-Linh-Portrait.jpg">
+            <h3>Linh Song</h3>
+        </a>
+        <a href="#marella"class="card">
+            <img src="https://shannonmessenger.com/wp-content/uploads/2019/11/Marella-Redek-400x516.jpg">
+            <h3>Marella Redek</h3>
+        </a>
+        <a href="#maruca"class="card">
+            <img src="https://shannonmessenger.com/wp-content/uploads/2019/11/Maruca-400x516.jpg">
+            <h3>Maruca Chebota</h3>
+        </a>
+        <a href="#stina"class="card">
+            <img src="https://shannonmessenger.com/wp-content/uploads/2019/11/Stina-Heks-400x516.jpg">
+            <h3>Stina Heks</h3>
+        </a>
+        <a href="#wylie"class="card">
+            <img src="https://shannonmessenger.com/wp-content/uploads/2018/09/Final-Wylie-Portrait.jpg">
+            <h3>Wylie Endal</h3>
+        </a>
+        <a href="#jensi"class="card">
+            <img src="https://shannonmessenger.com/wp-content/uploads/2019/11/Jensi-Babblos-400x516.jpg">
+            <h3>Jensi Babblos</h3>
+        </a>
+        </div>
+        <!-- sophie modal -->
+         <div id="sophie" class="modal">
+            <div class="modalbox">
+                <a href="#"class="closebutton">&times;</a>
+                <img src="KotLC.png">
+                <h2>Sophie</h2>
+                <p>Role: Main Character</p>
+                <p>Abilitie(s): Telepath, Inflictor, Polygot, Teleporter, Enhancer</p>
+            </div>
+         </div>
+         <!-- biana modal -->
+          <div id="biana" class="modal">
+            <div class="modalbox">
+                <a href="#"class="closebutton">&times;</a>
+                <img src="KotLC.png">
+                <h2>Biana</h2>
+                <p>Role: Side Character, Main character's friend</p>
+                <p>Abilitie(s): Vanisher</p>
+            </div>
+         </div>
+         <!-- fitz modal -->
+          <div id="fitz" class="modal">
+            <div class="modalbox">
+                <a href="#"class="closebutton">&times;</a>
+                <img src="KotLC.png">
+                <h2>Fitz</h2>
+                <p>Role: Side Character, Main character's close friend and Cognate</p>
+                <p>Abilitie(s): Telepath</p>
+            </div>
+         </div>
+         <!-- keefe modal -->
+          <div id="keefe" class="modal">
+            <div class="modalbox">
+                <a href="#"class="closebutton">&times;</a>
+                <img src="KotLC.png">
+                <h2>Keefe</h2>
+                <p>Role: Side Character, Main Character's closest friend</p>
+                <p>Abilitie(s): Empath, Polygot, Stellarlune Ability</p>
+            </div>
+         </div>
+         <!-- dex modal -->
+          <div id="dex" class="modal">
+            <div class="modalbox">
+                <a href="#"class="closebutton">&times;</a>
+                <img src="KotLC.png">
+                <h2>Dex</h2>
+                <p>Role: Side Character, Main character's best friend</p>
+                <p>Abilitie(s): Technopath</p>
+            </div>
+         </div>
+         <!-- tam modal -->
+          <div id="tam" class="modal">
+            <div class="modalbox">
+                <a href="#"class="closebutton">&times;</a>
+                <img src="KotLC.png">
+                <h2>Tam</h2>
+                <p>Role: Side Character, Main character's friend</p>
+                <p>Abilitie(s): Shade</p>
+            </div>
+         </div>
+         <!-- linh modal -->
+          <div id="linh" class="modal">
+            <div class="modalbox">
+                <a href="#"class="closebutton">&times;</a>
+                <img src="KotLC.png">
+                <h2>Linh</h2>
+                <p>Role: Side Character, Main character's friend</p>
+                <p>Abilitie(s): Hydrokinetic</p>
+            </div>
+         </div>
+         <!-- marella modal -->
+          <div id="marella" class="modal">
+            <div class="modalbox">
+                <a href="#"class="closebutton">&times;</a>
+                <img src="KotLC.png">
+                <h2>Marella</h2>
+                <p>Role: Side Character, Main character's friend</p>
+                <p>Abilitie(s): Pyrokinetic</p>
+            </div>
+         </div>
+         <!-- maruca modal -->
+          <div id="maruca" class="modal">
+            <div class="modalbox">
+                <a href="#"class="closebutton">&times;</a>
+                <img src="KotLC.png">
+                <h2>Maruca</h2>
+                <p>Role: Side Character, Main character's friend</p>
+                <p>Abilitie(s): Psionipath</p>
+            </div>
+         </div>
+         <!-- stina modal -->
+          <div id="stina" class="modal">
+            <div class="modalbox">
+                <a href="#"class="closebutton">&times;</a>
+                <img src="KotLC.png">
+                <h2>Stina</h2>
+                <p>Role: Side Character, Main character's frenemy</p>
+                <p>Abilitie(s): Empath</p>
+            </div>
+         </div>
+         <!-- wylie modal -->
+          <div id="wylie" class="modal">
+            <div class="modalbox">
+                <a href="#"class="closebutton">&times;</a>
+                <img src="KotLC.png">
+                <h2>Wylie</h2>
+                <p>Role: Side Character, Main character's friend</p>
+                <p>Abilitie(s): Flasher</p>
+            </div>
+         </div>
+         <!-- jensi modal -->
+          <div id="jensi" class="modal">
+            <div class="modalbox">
+                <a href="#"class="closebutton">&times;</a>
+                <img src="KotLC.png">
+                <h2>Jensi</h2>
+                <p>Role: Side Character, Main character's friend</p>
+                <p>Abilitie(s): None</p>
+            </div>
+         </div>
+    </body>
+</html>
